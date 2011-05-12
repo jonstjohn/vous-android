@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    >
+<!-- 
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+-->
+
+	<ImageView
+		android:id="@+id/vous_logo"
+		android:src="@drawable/vous_logo2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</ImageView>
+
+	<!-- Row 1 -->	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingTop="35dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/schedule_image"
+				android:src="@drawable/calendar_32"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/schedule_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Schedule"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/sponsor_image"
+				android:src="@drawable/star"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/sponsor_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Sponsors"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Row 2 -->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingTop="35dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/weather_image"
+				android:src="@drawable/shower1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/weather_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Weather"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/map_image"
+				android:src="@drawable/globe_32"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/map_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Map"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Row 3 -->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingTop="35dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/support_image"
+				android:src="@drawable/users"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/support_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Support NRAC"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		
+			<ImageView
+				android:id="@+id/registration_image"
+				android:src="@drawable/pencil_32"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</ImageView>
+			
+	        <TextView
+	            android:id="@+id/registration_text"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Registration"
+	            style="@style/MainNav"
+	            />
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+
+    <!-- About CW -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="35dp">
+
+            <TextView
+                android:id="@+id/cw_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Created by Jon St. John at ClimbingWeather.com"
+                style="@style/MainNav"
+                />
+        
+    </LinearLayout>
+
+	
+</LinearLayout>
