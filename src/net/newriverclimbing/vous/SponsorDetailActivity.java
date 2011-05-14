@@ -12,8 +12,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ScheduleDetailActivity extends Activity {
-    
+public class SponsorDetailActivity extends Activity {
     /**
      * Progress dialog for loading
      */
@@ -37,8 +36,8 @@ public class ScheduleDetailActivity extends Activity {
       String eventId = extras.getString("id");
       
       // Determine JSON request URL
-      String url = "/vous_event.php?id=" + eventId;
-      setContentView(R.layout.event);
+      String url = "/vous_sponsor.php?id=" + eventId;
+      setContentView(R.layout.sponsor);
       
       // Show loading dialog
       dialog = ProgressDialog.show(this, "", "Loading. Please wait...", true);

@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
@@ -121,6 +122,23 @@ public class ScheduleListActivity extends Activity {
                     ((TextView) eventRow.findViewById(R.id.name)).setText(eventData.getString("n"));
                     ((TextView) eventRow.findViewById(R.id.location)).setText(eventData.getString("t") + " @ " + eventData.getString("l"));
                     eventRow.setId(j);
+                    eventRow.setTag(eventData.getString("id"));
+                    
+                    eventRow.setOnClickListener(new OnClickListener() {
+                        
+                        public void onClick(View v) {
+                            Log.i("vous", "click");
+                            Log.i("vous", (String) v.getTag());
+                            //String str = hashMap.get("areaId"); // id
+                            //String areaName = hashMap.get("name");
+                      
+                            Intent i = new Intent(getApplicationContext(), ScheduleDetailActivity.class);
+                            i.putExtra("id", (String) v.getTag());
+                            //i.putExtra("name", areaName);
+                            startActivity(i);
+                        }
+                        
+                    });
                     table.addView(eventRow);
                     
                 }
@@ -137,5 +155,12 @@ public class ScheduleListActivity extends Activity {
       dialog.hide();
       
     }
+    
+    /*
+    public void rowClick()
+    {
+        Log.i("vous", "click");
+    }
+    */
 
 }

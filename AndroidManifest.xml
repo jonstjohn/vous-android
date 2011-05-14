@@ -13,7 +13,9 @@
         </activity>
         
         <activity android:name=".ScheduleListActivity"></activity>
+        <activity android:name=".ScheduleDetailActivity"></activity>
         <activity android:name=".SponsorListActivity"></activity>
+        <activity android:name=".SponsorDetailActivity"></activity>
         <activity android:name=".WeatherActivity"></activity>
         <activity android:name=".WeatherDailyActivity"></activity>
         <activity android:name=".WeatherHourlyActivity"></activity>

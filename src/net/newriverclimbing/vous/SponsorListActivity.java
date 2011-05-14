@@ -11,10 +11,13 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -119,6 +122,26 @@ public class SponsorListActivity extends Activity {
                             getResources().getIdentifier(logoStr, "drawable", "net.newriverclimbing.vous")
                     );
                 }
+                
+                sponsorRow.setId(i);
+                sponsorRow.setTag(sponsorData.getString("id"));
+                
+                sponsorRow.setOnClickListener(new OnClickListener() {
+                    
+                    public void onClick(View v) {
+                        //Log.i("vous", "click");
+                        //Log.i("vous", (String) v.getTag());
+                        //String str = hashMap.get("areaId"); // id
+                        //String areaName = hashMap.get("name");
+                  
+                        Intent i = new Intent(getApplicationContext(), SponsorDetailActivity.class);
+                        i.putExtra("id", (String) v.getTag());
+                        //i.putExtra("name", areaName);
+                        startActivity(i);
+                    }
+                    
+                });
+                
                 table.addView(sponsorRow);
                 
             }
