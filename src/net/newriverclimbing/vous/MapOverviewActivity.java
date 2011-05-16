@@ -58,28 +58,6 @@ public class MapOverviewActivity extends MapActivity {
 
     }
     
-    /**
-     * On pause activity
-     */
-    public void onPause()
-    {
-        super.onPause();
-        dialog.dismiss();
-    }
-    
-    public void onStop()
-    {
-        super.onStop();
-        dialog.dismiss();
-    }
-    
-    public void onDestroy()
-    {
-        super.onDestroy();
-        dialog.dismiss();
-    }
-    
-    
     @Override
     protected boolean isRouteDisplayed() {
         return false;
