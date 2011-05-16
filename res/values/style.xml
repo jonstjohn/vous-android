@@ -4,7 +4,10 @@
         <item name="android:textColor">#333333</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:textSize">11sp</item>
-        <item name="android:paddingTop">5dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="BasicList">
         <item name="android:layout_width">fill_parent</item>
@@ -97,5 +100,30 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">10sp</item>
+    </style>
+    <style name="Basic">
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+    <style name="title" parent="@style/Basic">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="subtitle" parent="@style/Basic">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#666</item>
+    </style>
+    <style name="sectionHeading" parent="@style/Basic">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="sectionText" parent="@style/Basic">
+        <item name="android:textSize" parent="@style/Basic">12sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:autoLink">web</item>
     </style>
 </resources>

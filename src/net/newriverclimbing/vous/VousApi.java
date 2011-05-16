@@ -1,6 +1,7 @@
 package net.newriverclimbing.vous;
 
 import android.content.Context;
+import android.util.Log;
 
 /**
  * Handle ClimbingWeather.com api requests
@@ -36,6 +37,7 @@ public class VousApi {
         String absoluteUrl = mBaseUrl + url;
         
         HttpToJson toJson = new HttpToJson();
+        Log.i("vous", absoluteUrl);
         return toJson.getJsonFromUrl(absoluteUrl);
         
     }

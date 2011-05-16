@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#fff">
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:text="Registration"
+        style="@style/title">
+    </TextView>
+    <TextView
+        android:text="Register for the Vous"
+        style="@style/subtitle">
+    </TextView>
+    <TextView
+        android:text="Registration for the New River Gorge Rendezvous is available through Active.com ."
+        style="@style/sectionText">
+    </TextView>
+    <TextView
+        android:text="Visit the Rendezvous website at www.newriverrendezvous.com for more information."
+        style="@style/sectionText">
+    </TextView>
+  </LinearLayout>
+</ScrollView>

@@ -129,10 +129,6 @@ public class SponsorListActivity extends Activity {
                 sponsorRow.setOnClickListener(new OnClickListener() {
                     
                     public void onClick(View v) {
-                        //Log.i("vous", "click");
-                        //Log.i("vous", (String) v.getTag());
-                        //String str = hashMap.get("areaId"); // id
-                        //String areaName = hashMap.get("name");
                   
                         Intent i = new Intent(getApplicationContext(), SponsorDetailActivity.class);
                         i.putExtra("id", (String) v.getTag());

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#fff">
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:text="NRAC Needs Your Help"
+        style="@style/title">
+    </TextView>
+    <TextView
+        android:text="What you can do"
+        style="@style/subtitle">
+    </TextView>
+    <TextView
+        android:text="Stop by the Hospitality Tent"
+        style="@style/sectionHeading">
+    </TextView>
+    <TextView
+        android:text="Learn more about NRAC and climbing in the New River Gorge @ the Hospitality Tent."
+        style="@style/sectionText">
+    </TextView>
+    <TextView
+        android:text="Join Our Groups"
+        style="@style/sectionHeading">
+    </TextView>
+    <TextView
+        android:text="Join our mailing list, Facebook group or follow us on Twitter."
+        style="@style/sectionText">
+    </TextView>
+    <TextView
+        android:text="Make a Donation"
+        style="@style/sectionHeading">
+    </TextView>
+    <TextView
+        android:text="Help make the local projects happen, give at www.newriverclimbing.net ."
+        style="@style/sectionText">
+    </TextView>
+    <TextView
+        android:text="Participate in Trail Projects"
+        style="@style/sectionHeading">
+    </TextView>
+    <TextView
+        android:text="Join us for a half-day or full-day event that improves climbing access."
+        style="@style/sectionText">
+    </TextView>
+    <TextView
+        android:text="Education Yourself"
+        style="@style/sectionHeading">
+    </TextView>
+    <TextView
+        android:text="Visit the NRAC website to learn about local issues www.newriverclimbing.net ."
+        style="@style/sectionText">
+    </TextView>
+  </LinearLayout>
+</ScrollView>

@@ -11,6 +11,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import android.util.Log;
+
 public class HttpToJson {
 	
     public String getJsonFromUrl(String url)
@@ -32,7 +34,7 @@ public class HttpToJson {
             instream.close();
             
         } catch (Exception e) {
-        	
+        	Log.i("vous", e.getMessage());
         	result = "{}";
         	
         }

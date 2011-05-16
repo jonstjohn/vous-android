@@ -9,6 +9,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -81,8 +82,9 @@ public class SponsorDetailActivity extends Activity {
         
         //TableLayout table = (TableLayout) findViewById(R.id.event);
         TextView nameView = (TextView) findViewById(R.id.name);
-        TextView locationView = (TextView) findViewById(R.id.location);
+        TextView websiteView = (TextView) findViewById(R.id.website);
         TextView descriptionView = (TextView) findViewById(R.id.description);
+        ImageView logoView = (ImageView) findViewById(R.id.logo);
         
         try {
           
@@ -91,13 +93,27 @@ public class SponsorDetailActivity extends Activity {
             JSONObject resultData = json.getJSONObject("result");
             
             nameView.setText(resultData.getString("n"));
-            locationView.setText(resultData.getString("t") + " @ " + resultData.getString("l"));
+            websiteView.setText(resultData.getString("w"));
             descriptionView.setText(resultData.getString("d").replace("\r\n", "\n"));
+            
+            String logoStr = resultData.getString("l").replace(".jpg", "");
+            if (logoStr.length() > 0) {
+                logoStr = logoStr.replace("100_", "sp_");
+                logoStr = logoStr.replace("150_", "sp_");
+                logoStr = logoStr.replace("-", "_");
+                logoStr = logoStr.replace(".", "_");
+                logoStr = logoStr.toLowerCase();
+                Log.i("vous", logoStr);
+                //logoStr = "sp_dpm_logo";
+                logoView.setImageResource(
+                        getResources().getIdentifier(logoStr, "drawable", "net.newriverclimbing.vous")
+                );
+            }
           
         } catch (JSONException e) {
           
             Log.i("vous", e.getMessage());
-            Toast.makeText(mContext, "An error occurred while retrieving event data", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "An error occurred while retrieving sponsor data", Toast.LENGTH_SHORT).show();
           
         }
     
